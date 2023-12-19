@@ -3,7 +3,7 @@
 
 body{
     font-family: 'Lora', serif;
-    background-color: #F2E205;
+    background-color: white;
     margin: 0px;
     color: white;
 }
@@ -11,9 +11,8 @@ body{
 header{
     background-color: #F2B705;
     padding: 10px 0px;
-    margin: 5px 0px;
+    margin: 0px;
     text-align: center;
-    outline: 5px solid ;
 }
 
 h1{
@@ -24,8 +23,9 @@ h1{
 nav{
     background-color: #F2E205;
     padding: 3px;
-    margin: 0px 20px;
-    box-shadow: 4px 7px 6px 0px rgba(0, 0, 0, 0.199);
+    margin: 0px 730px;
+    box-shadow: 5px 4px 7px 0px rgba(0, 0, 0, 0.199);
+    border-radius: 20px;
 }
 
 nav > a{
@@ -42,10 +42,7 @@ a:hover{
 }
 
 main{
-    margin: 70px 10px;
-    padding: 10px;
-    background: #F2B705;
-    outline: 5px solid ;
+    margin: 267px 0px;
 }
 
 article{
@@ -59,7 +56,6 @@ article > h2{
 }
 
 article > p{
-    background-color: white;
     color: black;
     padding: 5px;
 }
@@ -78,5 +74,4 @@ footer{
     font-weight: bolder;
     color: white;
     font-size: 1.1em;
-    outline: 5px solid ;
 }
