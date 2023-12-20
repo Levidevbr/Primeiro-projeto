@@ -1,0 +1,97 @@
+/*
+Configurações gerais
+*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'titlefilme';
+    src: url(fontes/Film\ Noir\ Adventure\ Italic.otf) format('opentype');
+    font-weight: normal;
+}
+:root{
+    --fonttexto: 'Arial', Helvetica, sans-serif;
+    --fontheader: 'Anton', sans-serif;
+    --fontsubtitulo: 'titlefilme', sans-serif;
+    --cor01: #F2766B;
+    --cor02: #D94032;
+    --cor03: #8C1414;
+    --cor04: #590A0A;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+
+
+/*
+Cabeçalho
+*/
+header{
+    background-color: var(--cor04);
+    background-image: linear-gradient(to bottom, var(--cor03),var(--cor04));
+    font-family: var(--fontheader);
+    padding: 10px 20px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logoh1{
+    color: white;
+    text-shadow: 5px 8px 6px black;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.menubar{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    padding: 0px 20px;
+
+}
+
+.navegation{
+    color: white;
+    text-decoration: none;
+}
+
+.contato{
+    text-decoration: none;
+    background-color: none;
+}
+a > button {
+    display: block;
+    font-size: 1.75em;
+    font-family: var(--fontheader);
+    background:  none;
+    border-style: none;
+    color: white;
+    text-shadow: 5px 8px 6px black;
+    width: 176.06px;
+    margin-right: -27px;
+}
+
+
+
+/*
+Corpo
+*/
+main{
+    width: 1400px;
+    height: 1000px;
+    background-color: #590A0A;
+    margin: auto;
+    margin-top: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

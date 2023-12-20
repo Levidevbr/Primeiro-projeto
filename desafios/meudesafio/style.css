@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: 'titlefilme';
+    src: url(fontes/Film\ Noir\ Adventure\ Italic.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --fonttexto: 'Arial', Helvetica, sans-serif;
+    --fontheader: 'Anton', sans-serif;
+    --fontsubtitulo: 'titlefilme', sans-serif;
+    --cor01: #F2766B;
+    --cor02: #D94032;
+    --cor03: #8C1414;
+    --cor04: #590A0A;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--fonttexto);
+    background-color: black;
+}
+
+
+
+header{
+    background-color: var(--cor04);
+    background-image: linear-gradient(to bottom, var(--cor03),var(--cor04));
+    padding: 20px 4%;
+
+}
+header div.interface{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px
+}
+
+
+
+div.interface > div.logo{
+    text-align: center;
+}
+
+div.interface div.logo > h1{
+    font-family: var(--fontheader);
+    color: white;
+    text-shadow: 5px 8px 6px black;
+    letter-spacing: 1.6px;
+    padding: 0px 7px;
+
+}
+div.logo > h1:hover{
+    transform: scale(1.05);
+}
+
+
+nav ul li > a {
+    font-family: var(--fontheader);
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 5px 8px 6px black;
+    font-size: 1.3em;
+    padding: 0px 7px;
+    margin: 0px 7px;
+    
+}
+
+li a:hover{
+    transition: 1s;
+    border-radius: 9px;
+    background-color: #0000006e;
+
+}
+
+nav ul > li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+div.contato {
+    text-align: right;
+}
+
+div.contato > a{
+    text-decoration: none;
+}
+
+div.contato a > button{
+    font-size: 2em;
+    display: block;
+    font-family: var(--fontheader);
+    color: white;
+    text-shadow: 5px 8px 6px black;
+    background: none;
+    border-style: none;
+}
+
+a > button:hover{
+    transform: scale(1.05);
+}
+
+
+main{
+    min-height: 320px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    height: 1000px;
+}
